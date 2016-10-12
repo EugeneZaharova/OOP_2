@@ -9,7 +9,7 @@ using namespace std;
 class Tree {
 public:
 	Tree();
-	//Tree(const Tree& orig);
+	Tree(const Tree& orig);
 
 	void push(Triangle &&trian);
 	bool empty();
