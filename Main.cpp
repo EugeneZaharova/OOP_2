@@ -6,20 +6,57 @@
 using namespace std;
 
 int main() {
-	Tree tree;
+	int action;
+	Tree *tree;
 
-	tree.push(Triangle());
+	while (true) {
+		cout << "Menu" << endl;
+		cout << "1) Add node" << endl;
+		cout << "2) Remove node" << endl;
+		cout << "3) Print tree" << endl;
+		cout << "4) Calculate square" << endl;
+		cout << "5) Exit" << endl;
 
-	cout << tree;
+		cout << "Choose action: " << endl;
+		cin >> action;
 
-	Triangle trian;
-	trian = tree.pop();
-	cout << trian;
-	trian = tree.pop();
-	cout << trian; 
-	trian = tree.pop();
-	cout << trian;
+		if (action == 6) {
+			break;
+		}
 
-	system("pause");
-	return 0;
+		if (action == 0 || action > 4) {
+			cout << "Error. No such action in menu" << endl;
+			continue;
+		}
+
+		switch (action)
+		{
+			/*case 1:
+			{
+				Node *node;
+				Triangle *trian;
+				cout << "Enter the elem" << endl;
+				std::istream& operator>>(std::istream& is, Triangle &trian);
+				node.trian = trian;
+				Tree push(node);
+			}
+			default:
+				break;
+			}*/
+		}
+		/*Tree tree;
+		tree.push(Triangle());
+
+		cout << tree;
+		Triangle trian;
+		trian = tree.pop();
+		cout << trian;
+		trian = tree.pop();
+		cout << trian;
+		trian = tree.pop();
+		cout << trian;
+
+		system("pause");
+		return 0;*/
+	}
 }
