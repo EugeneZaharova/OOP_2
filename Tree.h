@@ -14,7 +14,7 @@ public:
 	void push(Triangle &&trian);
 	bool empty();
 	Triangle pop();
-	friend std::ostream& operator<<(std::ostream& os, const Tree tree);
+	friend std::ostream& operator<<(std::ostream& os, const Tree& tree);
 	virtual ~Tree();
 private:
 
