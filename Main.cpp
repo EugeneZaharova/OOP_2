@@ -7,7 +7,9 @@ using namespace std;
 
 int main() {
 	int action;
-	Tree *tree;
+	Tree *tree = new Tree();
+	Node *node;
+	node.trian = new Triangle();
 
 	while (true) {
 		cout << "Menu" << endl;
@@ -20,7 +22,7 @@ int main() {
 		cout << "Choose action: " << endl;
 		cin >> action;
 
-		if (action == 6) {
+		if (action == 5) {
 			break;
 		}
 
@@ -31,32 +33,41 @@ int main() {
 
 		switch (action)
 		{
-			/*case 1:
+			case 1:
 			{
-				Node *node;
-				Triangle *trian;
-				cout << "Enter the elem" << endl;
-				std::istream& operator>>(std::istream& is, Triangle &trian);
-				node.trian = trian;
-				Tree push(node);
-			}
-			default:
+				cout << "Enter the element" << endl;
+				node.trian = new Triangle();
+				std::istream& operator>>(std::istream& is, Triangle& node->trian);
+				//Node node.trian = trian;
+				tree->push(node.trian);
 				break;
-			}*/
+			}
+			case 2:
+			{
+				cout << "Enter the element" << endl;
+				tree->pop(node);
+				break;
+			}
+			case 3:
+			{
+				std::ostream& operator<<(std::ostream& os, Tree& tree);
+				break;
+			}
+			case 4:
+			{
+				double square = 0;
+				cout << "Enter the element" << endl;
+				std::istream& operator>>(std::istream& is, Node node);
+				square = node.trian->Square();
+				cout << square << endl;
+				break;
+			}
+			case 5:
+			{
+				tree->~Tree();
+				break; 
+			}
 		}
-		/*Tree tree;
-		tree.push(Triangle());
-
-		cout << tree;
-		Triangle trian;
-		trian = tree.pop();
-		cout << trian;
-		trian = tree.pop();
-		cout << trian;
-		trian = tree.pop();
-		cout << trian;
-
-		system("pause");
-		return 0;*/
 	}
+	return 0;
 }
